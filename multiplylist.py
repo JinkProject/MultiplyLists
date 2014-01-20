@@ -1,7 +1,6 @@
 with open("multiply.txt") as f:
     for line in f:
-        line=line.strip("\n")
-        line=line.split("|")
+        line=line.strip("\n").split("|")
         x,y=[x.split() for x in line]
         someAr=[]
         for num in range(len(x)):
